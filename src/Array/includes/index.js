@@ -1,5 +1,5 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes?v=control#Polyfill
-module.exports = Array.includes || function(searchElement, fromIndex) {
+module.exports = function(searchElement, fromIndex) {
 
 	// 1. Let O be ? ToObject(this value).
 	if (this == null) {
