@@ -1,6 +1,6 @@
 {
   "name": "react-native-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polyfill newer JS features. Primarily targeted at older phones (for example, iOS 8) that will still run React Native. This library mutates JavaScript's built-in objects and should be used judiciously.",
   "main": "index.js",
   "scripts": {
