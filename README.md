@@ -62,6 +62,8 @@ parseInt
 
 ### String
 codePointAt
+fromCodePoint
+normalize // Uses the unorm library for a polyfill
 
 ## Resources
 More information about this topic can be found at:

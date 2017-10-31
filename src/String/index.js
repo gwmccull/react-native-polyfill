@@ -5,3 +5,14 @@ if (!String.prototype.codePointAt) {
 		writable: true
 	});
 }
+if (!String.prototype.normalize) {
+	// the unorm library automatically polyfills the normalize function
+	require('unorm');
+}
+if (!String.fromCodePoint) {
+	defineProperty(String, 'fromCodePoint', {
+		value: require('./fromCodePoint'),
+		configurable: true,
+		writable: true
+	});
+}
