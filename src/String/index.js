@@ -10,7 +10,7 @@ if (!String.prototype.normalize) {
 	require('unorm');
 }
 if (!String.fromCodePoint) {
-	defineProperty(String, 'fromCodePoint', {
+	Object.defineProperty(String, 'fromCodePoint', {
 		value: require('./fromCodePoint'),
 		configurable: true,
 		writable: true
