@@ -10,10 +10,10 @@ Unhandled JS Exception: undefined is not a function (evaluating ‘Number.parseI
 ```
 
 A lot of these functions are the ones that existed in prior versions of JavaScript
-but were added to the Number object to namespace them.  For example,
-```
-parseInt('20', 10);  // existing JavaScript function
-Number.parseInt('20', 10)  // the 'new' way of accessing the same function as of ES2015
+but were added to the Number object to namespace them.  For example:
+```js
+parseInt('20', 10); // existing JavaScript function
+Number.parseInt('20', 10); // the 'new' way of accessing the same function as of ES2015
 ```
 
 ## Installing
@@ -22,20 +22,20 @@ npm install --save react-native-polyfill
 ```
 
 To use the entire package and mutate the base objects, simply import or require the package:
-```
+```js
 import 'react-native-polyfill';
 require('react-native-polyfill');
 ```
 
 If you only want the Array or Number polyfills, you can include just one:
-```
+```js
 import 'react-native-polyfill/src/Array';
 require('react-native-polyfill/src/Array');
 ```
 
 If you just want a single function or you want to limit the number of changes to
 the base object, you can access the functions directly:
-```
+```js
 const includes = require('react-native-polyfill/src/Array/includes');
 ```
 
@@ -51,19 +51,19 @@ JavaScript engines that already implement the functions.
 
 ## Polyfilled Functions
 ### Array
-includes
+* includes
 
 ### Number
-isInteger
-isNaN
-isSafeInteger
-parseFloat
-parseInt
+* isInteger
+* isNaN
+* isSafeInteger
+* parseFloat
+* parseInt
 
 ### String
-codePointAt
-fromCodePoint
-normalize // Uses the unorm library for a polyfill
+* codePointAt
+* fromCodePoint
+* normalize // Uses the unorm library for a polyfill
 
 ## Resources
 More information about this topic can be found at:
